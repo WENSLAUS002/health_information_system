@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <form action="submit_forms.php" method="post">
+        <!-- Include all your input fields here -->
+        <button class="submit-btn" type="submit">Submit All Forms</button>
+    </form>
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #00695c;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .header img {
+            width: 80px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            display: inline-block;
+            margin: 0;
+            font-size: 2em;
+            vertical-align: middle;
+        }
+
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .form-section input, .form-section select, .form-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            background-color: #388e3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patient Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="clients.html">Health Information System</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="portal.html">Patient Portal</a>
+            <a href="careers.html">Careers</a>
+            <a href="library.html">Health Library</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Patient Portal Access</h2>
+            <p>Access your medical records and communicate with our staff as you fill your respective form.</p>
+
+            <div class="container">
+
+                <!-- Header with Logo and Hospital Name -->
+                <div class="header">
+                    <img src="IMG/home.jpg" alt="Hospital Logo">
+                    <h1>The Nairobi Hospital</h1>
+                </div>
+            
+                <!-- Patient Registration Form -->
+                <div class="form-section">
+                    <h2>Patient Registration Form</h2>
+                    <label for="reg-name">Name:</label>
+                    <input type="text" id="reg-name" name="reg-name">
+                    
+                    <label for="reg-gender">Gender:</label>
+                    <select id="reg-gender" name="reg-gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <label for="reg-age">Age:</label>
+                    <input type="number" id="reg-age" name="reg-age">
+            
+                    <label for="reg-contact">Contact Number:</label>
+                    <input type="tel" id="reg-contact" name="reg-contact">
+            
+                    <label for="reg-address">Address:</label>
+                    <textarea id="reg-address" name="reg-address" rows="2"></textarea>
+                </div>
+            
+                <!-- Patient Admission Form -->
+                <div class="form-section" style="background-color: #e3f2fd;">
+                    <h2>Admission Form</h2>
+                    <label for="adm-sickness">Sickness/Condition:</label>
+                    <input type="text" id="adm-sickness" name="adm-sickness">
+            
+                    <label for="adm-description">Description:</label>
+                    <textarea id="adm-description" name="adm-description" rows="3"></textarea>
+            
+                    <label for="adm-doctor">Assigned Doctor:</label>
+                    <input type="text" id="adm-doctor" name="adm-doctor">
+            
+                    <div class="signature">
+                        Doctor’s Signature: ______________________ Date: _______________
+                    </div>
+                </div>
+            
+                <!-- Surgery Form -->
+                <div class="form-section" style="background-color: #ffe0b2;">
+                    <h2>Pre-Surgery Form</h2>
+                    <label for="sur-name">Patient Name:</label>
+                    <input type="text" id="sur-name" name="sur-name">
+            
+                    <label for="sur-surgery-type">Type of Surgery:</label>
+                    <input type="text" id="sur-surgery-type" name="sur-surgery-type">
+            
+                    <label for="sur-doctor">Surgeon:</label>
+                    <input type="text" id="sur-doctor" name="sur-doctor">
+            
+                    <label for="sur-consent">Consent Given (Yes/No):</label>
+                    <select id="sur-consent" name="sur-consent">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <div class="signature">
+                        Doctor’s Signature: ______________________ Date: _______________
+                    </div>
+                </div>
+            
+                <!-- Discharge Form -->
+                <div class="form-section" style="background-color: #f1f8e9;">
+                    <h2>Discharge Form</h2>
+                    <label for="dis-name">Patient Name:</label>
+                    <input type="text" id="dis-name" name="dis-name">
+            
+                    <label for="dis-treatment">Treatment Provided:</label>
+                    <textarea id="dis-treatment" name="dis-treatment" rows="3"></textarea>
+            
+                    <label for="dis-followup">Follow-up Instructions:</label>
+                    <textarea id="dis-followup" name="dis-followup" rows="2"></textarea>
+            
+                    <label for="dis-next-appointment">Next Appointment Date:</label>
+                    <input type="date" id="dis-next-appointment" name="dis-next-appointment">
+            
+                    <div class="signature">
+                        Doctor’s Signature: ______________________ Date: _______________
+                    </div>
+                </div>
+            
+                <!-- Medical Card -->
+                <div class="form-section" style="background-color: #fbe9e7;">
+                    <h2>Medical Card</h2>
+                    <label for="card-name">Name:</label>
+                    <input type="text" id="card-name" name="card-name">
+            
+                    <label for="card-gender">Gender:</label>
+                    <select id="card-gender" name="card-gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <label for="card-amount">Amount Due:</label>
+                    <input type="number" id="card-amount" name="card-amount">
+            
+                    <label for="card-sickness">Sickness:</label>
+                    <input type="text" id="card-sickness" name="card-sickness">
+            
+                    <label for="card-description">Description:</label>
+                    <textarea id="card-description" name="card-description" rows="2"></textarea>
+                </div>
+            
+                <button class="submit-btn" type="submit">Submit All Forms</button>
+            
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Center for Epidemiological Modelling and Analysis(CEMA) Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+    <form action="submit_appointment.php" method="POST"></form>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #008080;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #008080;
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #008080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Make an Appointment</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="clients.html">Health Information System</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="portal.html">Patient Portal</a>
+            <a href="careers.html">Careers</a>
+            <a href="library.html">Health Library</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Book an Appointment (if you are not sure which form suits you from the list below)</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+
+
+            <section id="procedure">
+                <h2>How to Schedule an Appointment</h2>
+                <p>To book a consultation appointment, please fill one of the forms below that suits you, if you are not sure fill the above form. Our team will review your information and get back to you within 24-48 hours to confirm your appointment.</p>
+                <p>If you are interested in volunteering, applying for an internship, or applying for an open position, please scroll down to find the respective application forms.</p>
+            </section>
+        
+            <section id="appointment-form">
+                <h2>Consultation Appointment Form</h2>
+                <form action="/submit-appointment" method="POST">
+                    <div class="form-group">
+                        <label for="patient-name">Patient Name:</label>
+                        <input type="text" id="patient-name" name="patient_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-date">Preferred Appointment Date:</label>
+                        <input type="date" id="appointment-date" name="appointment_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="General Medicine">General Medicine</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor">Preferred Doctor (if any):</label>
+                        <select id="doctor" name="doctor">
+                            <option value="">Select a Doctor</option>
+                            <option value="Dr. Smith">Dr. Smith</option>
+                            <option value="Dr. Johnson">Dr. Johnson</option>
+                            <option value="Dr. Lee">Dr. Lee</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Submit Appointment Request">
+                </form>
+            </section>
+        
+            <section id="duty-roster">
+                <h2>Doctor Duty Roster</h2>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Doctor on Duty</th>
+                        <th>Specialty</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Dr. John</td>
+                        <td>General Medicine</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Dr. Johnson</td>
+                        <td>Pediatrics</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Dr. Lisa</td>
+                        <td>Dermatology</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Dr. Caren</td>
+                        <td>Orthopedics</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Dr. Andrew</td>
+                        <td>General Medicine</td>
+                    </tr>
+                </table>
+            </section>
+        
+            <section id="volunteer-form">
+                <h2>Volunteer Application Form</h2>
+                <form action="/submit-volunteer" method="POST">
+                    <div class="form-group">
+                        <label for="volunteer-name">Full Name:</label>
+                        <input type="text" id="volunteer-name" name="volunteer_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-email">Email:</label>
+                        <input type="email" id="volunteer-email" name="volunteer_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-phone">Phone Number:</label>
+                        <input type="text" id="volunteer-phone" name="volunteer_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-area">Preferred Area of Service:</label>
+                        <select id="volunteer-area" name="volunteer_area" required>
+                            <option value="Administration">Administration</option>
+                            <option value="Patient Care">Patient Care</option>
+                            <option value="Community Outreach">Community Outreach</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Submit Volunteer Application">
+                </form>
+            </section>
+        
+            <section id="internship-form">
+                <h2>Internship Application Form</h2>
+                <form action="/submit-internship" method="POST">
+                    <div class="form-group">
+                        <label for="intern-name">Full Name:</label>
+                        <input type="text" id="intern-name" name="intern_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="intern-email">Email:</label>
+                        <input type="email" id="intern-email" name="intern_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="intern-phone">Phone Number:</label>
+                        <input type="text" id="intern-phone" name="intern_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="intern-department">Department of Interest:</label>
+                        <select id="intern-department" name="intern_department" required>
+                            <option value="General Medicine">General Medicine</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Submit Internship Application">
+                </form>
+            </section>
+        
+            <section id="job-application-form">
+                <h2>Job Application Form</h2>
+                <form action="/submit-job-application" method="POST">
+                    <div class="form-group">
+                        <label for="job-name">Full Name:</label>
+                        <input type="text" id="job-name" name="job_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job-email">Email:</label>
+                        <input type="email" id="job-email" name="job_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job-phone">Phone Number:</label>
+                        <input type="text" id="job-phone" name="job_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job-position">Position Applied For:</label>
+                        <input type="text" id="job-position" name="job_position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Attach Resume:</label>
+                        <input type="file" id="resume" name="resume" required>
+                    </div>
+                    <input type="submit" value="Submit Job Application">
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Center for Epidemiological Modelling and Analysis(CEMA) Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

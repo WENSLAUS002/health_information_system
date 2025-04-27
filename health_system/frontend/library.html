@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Library</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul, ol {
+            margin: 20px 0;
+        }
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: #35424a;
+            position: relative;
+            animation: move 5s infinite;
+        }
+        @keyframes move {
+            0% {left: 0;}
+            50% {left: 50%;}
+            100% {left: 0;}
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Health Library</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="clients.html">Health Information System</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="portal.html">Patient Portal</a>
+            <a href="careers.html">Careers</a>
+            <a href="library.html">Health Library</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Health Education Resources</h2>
+            <p>Access articles and resources on health topics from this page.</p>
+
+            <div class="container">
+                <div class="main">
+                    <h2>About the Health Library</h2>
+                    <p>Our Health Library is a comprehensive resource for doctors, patients, and visitors. It provides up-to-date information on various health topics, medical conditions, treatments, and wellness tips.</p>
+        
+                    <h3>For Doctors</h3>
+                    <ul>
+                        <li>Access to the latest medical research and journals</li>
+                        <li>Clinical guidelines and best practices</li>
+                        <li>Continuing medical education resources</li>
+                        <li>Case studies and patient management tools</li>
+                        <li>Networking opportunities with other healthcare professionals</li>
+                    </ul>
+        
+                    <h3>For Patients</h3>
+                    <ol>
+                        <li>Information on diseases and conditions</li>
+                        <li>Guidance on healthy living and wellness</li>
+                        <li>Support resources and patient communities</li>
+                        <li>Interactive tools for tracking health metrics</li>
+                        <li>Access to telemedicine services</li>
+                    </ol>
+        
+                    <h3>For Visitors</h3>
+                    <p>Visitors can explore a wide range of health topics, participate in health seminars, and access educational materials to improve their understanding of health and wellness. They can also take virtual tours of healthcare facilities and attend online workshops.</p>
+        
+                    <h3>Health Information</h3>
+                    <table>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Nutrition</td>
+                            <td>Information on balanced diets, vitamins, and minerals. Includes meal planning tips and dietary guidelines.</td>
+                        </tr>
+                        <tr>
+                            <td>Exercise</td>
+                            <td>Guidelines for physical activity and fitness routines. Includes workout plans and tips for staying active.</td>
+                        </tr>
+                        <tr>
+                            <td>Mental Health</td>
+                            <td>Resources for managing stress, anxiety, and depression. Includes mindfulness exercises and therapy options.</td>
+                        </tr>
+                        <tr>
+                            <td>Preventive Care</td>
+                            <td>Information on vaccinations, screenings, and regular check-ups. Includes tips for disease prevention.</td>
+                        </tr>
+                        <tr>
+                            <td>Chronic Conditions</td>
+                            <td>Management strategies for chronic illnesses such as diabetes, hypertension, and asthma. Includes medication management and lifestyle adjustments.</td>
+                        </tr>
+                    </table>
+        
+                    <h3>Our Services</h3>
+                    <div class="animation">
+                        <img src="IMG/home.jpg" alt="Health Library Image">
+                    </div>
+                    <div class="animation">
+                        <img src="IMG/emergency.jpg" alt="Health Library Image">
+                    </div>
+                    <div class="animation">
+                        <img src="IMG/surgery.jpeg" alt="Health Library Image">
+                    </div>
+                    
+                    <p>Watch the animation above to see how our resources move to keep you informed and engaged.</p>
+        
+                    <h3>Health Library Image</h3>
+                    
+        
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions or need further assistance, please contact us at:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:info@nairobilibrary.com">info@nairobilibrary.com</a></li>
+                        <li>Phone: +254 7 45 595857</li>
+                        <li>Address: 62000-50200 Nairobi, Nairobi Hospital, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Center for Epidemiological Modelling and Analysis(CEMA) Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

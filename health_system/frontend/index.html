@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            color: #ffffff;
+            overflow-x: hidden;
+            padding-bottom: 20px;
+        }
+        
+        .background-image {
+            position: relative;
+            background-image: url('IMG/home.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .overlay h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .overlay p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services {
+            padding: 40px;
+            background-color: #00796b;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color: #ffffff;
+            color: #00796b;
+            width: 150px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-in-out;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hospital</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="clients.html">Health Information System</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="portal.html">Patient Portal</a>
+            <a href="careers.html">Careers</a>
+            <a href="library.html">Health Library</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>   
+        <section>
+            <h2>We are Grateful to serve you, welcome!!!</h2>
+            <p>Providing exceptional healthcare services for over 50 years.</p>
+            <div class="background-image" >
+                
+                <div class="overlay">
+                   
+                    <div>
+                        
+                        <h1>Welcome to Our Hospital</h1>
+                        <p>Where Compassion and Expertise Meet to Provide Exceptional Healthcare to Our Community</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services">
+                <h2>Our Services</h2>
+                <div class="services-container">
+                    
+                    <div class="service-item">
+                        <img src="IMG/emergency.jpg" alt="Emergency Icon"> <!-- Replace with actual image -->
+                        <p>Emergency Care</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="IMG/surgery.jpeg" alt="Surgery Icon"> <!-- Replace with actual image -->
+                        <p>Surgical Services</p>
+                    </div>
+            
+                    <div class="service-item">
+                        <img src="IMG/maternity.jpeg" alt="Maternity Icon"> <!-- Replace with actual image -->
+                        <p>Maternity Care</p>
+                    </div>
+            
+                    <div class="service-item">
+                        <img src="IMG/consultation.jpg" alt="Pediatrics Icon"> <!-- Replace with actual image -->
+                        <p>Pediatrics</p>
+                    </div>
+            
+                    <div class="service-item">
+                        <img src="IMG/therapy.jpg" alt="Therapy Icon"> <!-- Replace with actual image -->
+                        <p>Therapy & Rehab</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Center for Epidemiological Modelling and Analysis(CEMA) Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

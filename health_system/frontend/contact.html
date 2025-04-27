@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8f7;
+      color: #333;
+    }
+    header {
+      background-color: #00695c;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav {
+      margin-top: 10px;
+    }
+    header nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+    header nav a:hover {
+      color: #ffd600;
+    }
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #004d40;
+    }
+    h2 {
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      font-size: 1.1em;
+    }
+    .contact-item {
+      margin-bottom: 15px;
+    }
+    .contact-item a {
+      color: #00796b;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #00796b;
+      color: white;
+      border-radius: 50%;
+      font-size: 1.4em;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      background-color: #004d40;
+    }
+    .visit-note {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #e0f2f1;
+      border-left: 6px solid #00796b;
+      font-size: 1.1em;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #00695c;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="departments.html">Departments</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="clients.html">Health Info</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="portal.html">Portal</a>
+      <a href="careers.html">Careers</a>
+      <a href="library.html">Library</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="get-in-touch">
+      <h2>Get in Touch</h2>
+      <p>We are here to answer all your health-related questions and guide you. Feel free to reach out through the following channels:</p>
+      
+      <div class="contact-info">
+        <div class="contact-item"><strong>Telephone:</strong> <a href="tel:+254745595857">+254 745 595 857</a></div>
+        <div class="contact-item"><strong>Email:</strong> <a href="mailto:info@nairobihospital.com">info@nairobihospital.com</a></div>
+        <div class="contact-item"><strong>Address:</strong> 6200-20200 Health Street, Nairobi, Kenya</div>
+        <div class="contact-item"><strong>Website:</strong> <a href="https://www.nairobihospital.com" target="_blank">www.nairobihospital.com</a></div>
+      </div>
+    </section>
+
+    <section id="social-media">
+      <h2>Connect with Us</h2>
+      <p>Stay updated and interact with us through our official social media handles:</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/ourhospital" target="_blank" title="Twitter">&#x1F426;</a>
+        <a href="https://instagram.com/ourhospital" target="_blank" title="Instagram">&#x1F4F7;</a>
+        <a href="https://facebook.com/ourhospital" target="_blank" title="Facebook">&#x1F466;</a>
+      </div>
+    </section>
+
+    <section id="additional-contacts">
+      <h2>Other Communication Channels</h2>
+      <p>We are available through multiple platforms for your convenience:</p>
+      <div class="contact-info">
+        <div class="contact-item"><strong>WhatsApp:</strong> <a href="https://wa.me/254745595857" target="_blank">+254 745 595 857</a></div>
+        <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/ourhospital" target="_blank">Our Hospital on LinkedIn</a></div>
+        <div class="contact-item"><strong>Fax:</strong> +254 745 595 857</div>
+        <div class="contact-item"><strong>Telegram:</strong> <a href="https://t.me/ourhospital" target="_blank">Join us on Telegram</a></div>
+      </div>
+    </section>
+
+    <section id="visit-us">
+      <h2>Visit Us</h2>
+      <div class="visit-note">
+        <p>We warmly welcome you to visit our hospital for consultations, treatment inquiries, or to learn more about our specialized healthcare services. Our friendly staff is always ready to assist you in person. We are open Monday to Saturday, 8:00 AM to 6:00 PM.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Center for Epidemiological Modelling and Analysis (CEMA) Hospital. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Dynamic Year in Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
